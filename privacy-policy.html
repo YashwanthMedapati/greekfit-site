@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>GreekFit Privacy Policy - Draft</title>
+  <meta name="theme-color" content="#030303">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="images/logo-mark.webp" alt="GreekFit home" width="43" height="34"></a>
+    <nav class="nav" aria-label="Site">
+      <a href="./">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+<main class="legal">
+  <div class="wrap reading">
+  <div class="notice">
+    <p><strong>Pre-release draft (updated 2026-10-23 to match the app).</strong> Not legal advice. Do not publish this as GreekFit's final policy until a qualified reviewer has checked it.</p>
+    <p>Fill in before release: effective date, SMS provider, PostHog region, retention periods for resolved reports, provider backups and security logs, parental-consent handling, and the international-transfer notice. Each one is marked in [BRACKETS] below. See <code>PRIVACY_RELEASE_CHECKLIST.md</code>.</p>
+  </div>
+  <h1>GreekFit Privacy Policy</h1>
+  <p class="meta">Effective date: [SET BEFORE RELEASE] &middot; Operator: Yashwanth Reddy Medapati &middot; Contact: <a href="mailto:support.greekfit@gmail.com">support.greekfit@gmail.com</a></p>
+  <p>This policy explains how GreekFit's current workout app handles information when you use the app on iOS, Android, or the web. The account, cloud backup, public profile, following, and group features are optional. The workout log can be used without an account.</p>
+
+  <h2>Information you enter</h2>
+  <p>GreekFit stores routines and programs; logged workouts, sets, weights, repetitions, notes, and rest settings; body measurements and notes; custom exercises; equipment and training preferences; goals; and locally scheduled reminders. If you attach a progress photo, GreekFit stores a reference to the selected image on your device. The current cloud backup stores the measurement record and photo reference, not the photo file itself. BMI and calorie-calculator inputs are used for the calculation in the current session and are not included in the workout backup.</p>
+  <p>GreekFit has no advertising SDK. Optional PostHog usage analytics are disabled unless a project is configured and you turn on <strong>Share usage data</strong> in Settings. When enabled, GreekFit sends a random anonymous identifier, screen names, basic app and device details, and cloud-sync health numbers (counts, sizes and timings, never your records). It does not send workout, measurement, health, note, or account data or record your screen. Turning the setting off stops collection; the anonymous identifier may remain on your device. Sentry receives technical crash reports to help fix errors. GreekFit does not deliberately attach your name, email, or workout records to them. Your operating system, app store, hosting provider, and optional cloud provider may also process technical logs under their own terms.</p>
+
+  <h2>Apple Health and Health Connect</h2>
+  <p>Only if you turn on Health import in the app's Settings, GreekFit reads from Apple Health (iOS) or Health Connect (Android), with the permission you grant in that system, your most recent body weight, daily step counts, daily active calories, resting heart rate, sleep time, and workouts recorded by other apps or devices. GreekFit does not write to these services, does not read other health data types, and does not use or disclose health data for advertising or data brokerage. Imported weight is saved as a weight check-in and can sync across your signed-in devices. Steps, calories, heart rate, sleep and outside workouts are saved only on this device (the last 90 days) and do not cloud-sync. Weight and steps are included in a JSON data export; the other health data and the workout-history CSV are not. You can turn import off in Settings and revoke access at any time in the Health app or Health Connect.</p>
+
+  <h2>Hercules, the AI coach</h2>
+  <p>Hercules, the AI coach, sends nothing until you agree on its first screen, and only when you ask it for a plan, a week, a review of a lift or your week, or a follow-up answer while signed in. Its quick reads are worked out on your phone and send nothing. Each request sends a summary to Groq, Inc., the AI service that runs Hercules: sets per muscle, recent progress and records, sets you tagged as painful or hard, your goal, level, equipment, training days, session length, the plan you are asking about, your last few plans and how they went, lift goals, best estimated one-rep maxes, how hard you rated recent workouts, the About me notes you save, and the optional note or question you type. If you leave Include watch data on, it also sends last week's averages of steps, active calories, resting heart rate, sleep and energy check-ins. If you turn on Include body data, it also sends your current weight, its change over four weeks, goal weight, height, age, body-model choice and step goal. It never sends your name, email, photos, body measurements other than weight, or raw health samples. Groq processes the summary to write the plan under its own terms. GreekFit's server stores only how many times you used Hercules each day, to enforce the usage limit, and the latest plans are kept on your device. You can turn off watch data or body data, edit your About me notes, or stop sharing on the Hercules screen. Hercules gives coaching, not medical advice.</p>
+
+  <h2>Widgets and Lock Screen</h2>
+  <p>Optional home-screen widgets display this week's workout count, your weekly goal, and your next planned training day. On iPhone, an active rest timer can be shown on the Lock Screen and in the Dynamic Island. This information is generated on your device and is visible to anyone who can see your screen.</p>
+
+  <h2>Accounts and cloud backup</h2>
+  <p>If you create or sign into a cloud account, GreekFit uses your email address for authentication through Supabase, including sign-up confirmation and password-reset emails that you request. With your account we record which version of the Terms of Use you accepted, when, and your confirmation that you are at least 13. Your password is submitted to Supabase Auth; GreekFit does not include your plain-text password in its workout records.</p>
+  <p>You can also sign in with Apple, Google, or Facebook where offered. That provider confirms who you are and shares your email address and an account identifier with GreekFit (Apple can share a private relay address instead). If you sign in with a phone number, it is used to text you a one-time code through Supabase's SMS provider ([SMS PROVIDER NAME]) and is stored with your account.</p>
+  <p>When you are signed in, GreekFit automatically syncs routines, programs, finished workouts, measurement records, favorite exercises, trophies, and custom exercises between your devices (you can turn this off in Settings or use <strong>Sync Now</strong>). Copies from different devices are merged record by record, keeping the most recently changed version, and deletions are carried to your other devices using short deletion markers that are kept for up to 180 days.</p>
+  <p>Local records remain on the device after sign-out. Cloud records remain until you delete the account or the operator removes them.</p>
+
+  <h2>Groups and sharing</h2>
+  <p>If you join a group, its members can see your chosen display name, profile photo, chat messages, posts, poll choices, and any workout, routine, or ranking that you deliberately share. A group's owner can set a group photo; it is stored privately and only the group's members can open it. Workout shares contain the workout name, exercise names, duration, and set count, not set weights, private notes, measurements, or complete history. Routine shares contain exercises and planned targets, but not target weights or private notes. A group invite code or link can be shared with people you choose.</p>
+  <p>Leaving a group or being removed does not automatically erase older posts: they may appear as from a <strong>Former member</strong>. A member can delete their own posts while still in the group; a group owner can delete the group. Deleting your entire account removes your linked group posts and votes, and deletes groups you own.</p>
+
+  <h2>Public profile, following, and published workouts</h2>
+  <p>A public profile is optional and requires an account. If you create one, your display name, username, bio, and profile photo are visible to anyone signed in to GreekFit, as are the accounts you follow and the accounts that follow you. Your profile photo is resized on your device, then stored at a public web address that anyone who has the link can open. Profile text and published titles are checked against a list of prohibited terms, and some usernames are reserved.</p>
+  <p>Nothing you log is public unless you choose <strong>Publish to Profile</strong> on a workout or routine. A published item shows its name, exercises, set types, and repetitions, durations, or distances. For a workout it also shows its duration, set count, and completion time. Weights are included only if you turn them on. Notes, effort ratings, measurements, custom exercises, and your full history are never published. Any signed-in user can copy a published item into their own routines; copies remain on their devices after you unpublish it or delete your account.</p>
+  <p>Signed-in users can give kudos to and comment on published items. Kudos and comments, and who gave them, are visible to people who can see the item. GreekFit creates in-app activity notices (new followers, kudos, and comments) for the person they concern; notices are not created between accounts that have blocked each other, and you can clear them. Comments are checked against the prohibited-term list, can be reported and blocked like other content, and are removed with the published item or your account.</p>
+  <p>You can remove followers and block accounts. A blocked account cannot see your profile, published items, or your posts in shared groups, cannot follow you, and cannot join groups you own; any follows between you are removed. The blocked account is not notified. To prevent abuse, GreekFit records the time of certain actions (for example follows, publishing, profile changes, blocks, and reports) for up to 31 days to enforce rate limits.</p>
+
+  <h2>Workout buddies, shared streaks, and high-fives</h2>
+  <p>These features are optional and need an account. Workout buddies also need a public profile. Two people become workout buddies when one sends an invite and the other accepts it; either person can end it at any time, and blocking someone ends it automatically. If you turn on <strong>Share finished workouts with buddies</strong>, each finished workout you log shares its name, when it ended, how long it took, and its set count with your accepted buddies. It does not include weights, exercises, notes, or measurements. Only your accepted buddies can see these entries, and they are removed after about 30 days.</p>
+  <p>If you turn on <strong>Share my flame</strong>, your streak numbers (current and longest weeks, this week's workout count, your weekly goal, and whether a freeze is active) and your chosen flame style are visible to accepted buddies and to people who share a group with you. Turning it off stops sharing. People in the same circle can also send you a high-five (a fire or flex reaction); only you and the sender can see it, and high-fives are removed after about 30 days. Blocking someone stops all of this in both directions. Deleting your account removes your buddy links, shared workouts, shared streak, and high-fives. To prevent abuse, GreekFit records the time of certain actions for up to 31 days to enforce rate limits.</p>
+
+  <h2>Reports and feedback</h2>
+  <p>An exercise issue report can include the exercise ID and name, issue category, your written description, the displayed media type and source, and a timestamp. Sending a report straight to GreekFit requires you to be signed in. The report itself does not include your account ID or workout history, but the time you sent it is kept with your account for up to 31 days to limit spam. Do not include personal information in free-text descriptions. If you are signed out or the report inbox is not connected, GreekFit prepares a share or email draft instead; nothing is sent until you choose to send it. A report about a group post includes the reporter account ID, group/post IDs, and selected reason for moderation.</p>
+  <p>You can report a public profile or published item. The report stores your account ID, the reported account, the reason, any details you add, and a copy of the reported profile text and published item as they were at the time of the report, so moderators can review it even if it is later changed. The reported person is not told who reported them. Content reported by several different people is hidden automatically until a moderator reviews it. Moderators may remove content, hide profiles, or suspend accounts that break GreekFit's rules. Retention period for resolved reports: [VERIFY AND DISCLOSE BEFORE RELEASE].</p>
+
+  <h2>Service providers and external links</h2>
+  <p>GreekFit uses these service providers, each only for the purpose described:</p>
+  <ul>
+    <li><a href="https://supabase.com/privacy">Supabase</a>: accounts, cloud sync, profiles, groups, reports, and account deletion. GreekFit's Supabase project is hosted in the United States (US East, Virginia).</li>
+    <li><a href="https://groq.com/privacy-policy/">Groq</a>: runs Hercules, the AI coach, and receives only the training summary described above, and only when you ask Hercules for something.</li>
+    <li><a href="https://sentry.io/privacy/">Sentry</a>: technical crash reports, without your name, email, or workout records.</li>
+    <li><a href="https://posthog.com/privacy">PostHog</a>: usage analytics, only if you turn on <strong>Share usage data</strong>. [STATE US OR EU POSTHOG REGION].</li>
+    <li>Apple, Google, and Facebook: only if you use them to sign in. Your SMS provider: only if you sign in with a phone number.</li>
+  </ul>
+  <p>Exercise videos and illustrations currently approved for display are bundled with the app. Source and license links on exercise pages open external sites, which apply their own privacy practices. When you export, email, or share a file or report, the destination app or service you choose may receive that content. If you use GreekFit outside the United States, your cloud data is transferred to and stored in the United States. [CONFIRM TRANSFER MECHANISM AND REGIONAL RIGHTS NOTICE WITH LEGAL REVIEW].</p>
+
+  <h2>Storage, security, and retention</h2>
+  <p>On-device app records use the device's application storage. Cloud records, when enabled, are sent over encrypted connections to Supabase. No system can guarantee absolute security. Exported JSON or CSV files may contain sensitive fitness information; protect and remove copies you save or share yourself. On iPhone, data stored on your device may be included in your own iCloud or computer backup. On Android, GreekFit opts out of Google's automatic app backup, so its on-device data is not included there. Screenshots are blocked on the measurement screens.</p>
+  <p>Local records stay until you delete them, delete your account and local records through the app, or remove the app, subject to device backup behavior. Cloud account-linked records stay until account deletion or operator removal. Group posts may remain after a member leaves, as explained above. Account deletion removes linked cloud records through database relationships, including your public profile, profile photo, follows, blocks, published items, groups you own and their group photos, and reports you filed or that were filed about your profile; issue reports that have no account ID may remain. Provider backups and security logs may persist for a limited time. Exact retention periods for reports, provider backups, and logs: [VERIFY AND DISCLOSE BEFORE RELEASE].</p>
+
+  <h2>Your choices and deletion</h2>
+  <p>In Settings you can export routines, programs, workout history, and measurements as JSON, or completed workout sets as CSV. The current JSON export does not include group content, custom exercises, settings, or the image bytes behind progress-photo references. Importing a validated backup replaces those four local collections only after a preview and confirmation.</p>
+  <p>If you have an account, choose <strong>Profile &gt; Settings &gt; Cloud Backup &gt; Delete account</strong> in the app and type DELETE to confirm. This is permanent and also clears GreekFit's saved records on that device. Previously exported or shared files must be removed separately. You can also request deletion from the <a href="delete-account.html">GreekFit account-deletion page</a>. For access, correction, deletion, or other privacy questions, contact <a href="mailto:support.greekfit@gmail.com">support.greekfit@gmail.com</a>.</p>
+
+  <h2>Children and international use</h2>
+  <p>Accounts and community features require users to confirm they are at least 13. Where the law requires it (for example, in some U.S. states), GreekFit asks Apple or Google for an age range when you first use a community feature; the app store may ask you to agree before sharing it. GreekFit stores only the resulting category (adult, teen, under 13, unknown, or verification required) and when it was checked, and turns off community features for accounts identified as under 13. Workout logging on your device remains available. Any additional parental-consent process: [CONFIRM WITH LEGAL REVIEW BEFORE RELEASE]. Where cloud data is stored is described under Service providers; any region-specific rights notice (for example GDPR or California): [CONFIRM WITH LEGAL REVIEW BEFORE RELEASE].</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy when GreekFit's features or providers change. The effective date above will be revised and the current policy will be made available in the app and at this public address. Material changes should be explained to users before they take effect.</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Yashwanth Reddy Medapati</span>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="delete-account.html">Delete your account</a>
+      <a href="mailto:support.greekfit@gmail.com">support.greekfit@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
